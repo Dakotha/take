@@ -1,0 +1,16 @@
+.label {
+    padding: .8rem 1.7rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $font-color-white;
+    text-transform: uppercase;
+    border-radius: .7rem;
+
+    &--grey {
+        background-color: #e1e1e1;
+    }
+    
+    &--purple {
+        background-color: #bd8cbf;
+    }
+}

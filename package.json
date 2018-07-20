@@ -1,0 +1,22 @@
+{
+  "name": "take",
+  "version": "1.0.0",
+  "description": "PSD to HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass sass/main.scss css/style.css --watch",
+    "liveserver": "live-server",
+    "dev": "npm-run-all --parallel liveserver sass:watch"
+  },
+  "keywords": [
+    "PSD",
+    "HTML"
+  ],
+  "author": "Robert Bednarowicz",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.2",
+    "npm-run-all": "^4.1.3"
+  }
+}

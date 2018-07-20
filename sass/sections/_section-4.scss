@@ -1,0 +1,52 @@
+.section-4 {
+    background-image: 
+        linear-gradient(to right bottom, rgba(#82ca9c, 0.8), rgba(#caddd1, 0.3)),
+        url('../images/car.jpg');
+    
+    background-position-x: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 87.4rem;
+
+    .row {
+        position: relative;
+        height: 100%;
+    }
+
+    &__wrapper {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 45%;
+
+        @include rwd(tab-land) {
+            left: 4rem;
+            width: 60%;
+        }
+
+        @include rwd(tab-port) {
+            .btn-primary {
+                font-size: 2rem;
+            }
+        }
+
+        @include rwd(tab-port-smaller) {
+            @include absCenterX(40%);
+            text-align: center;
+        }
+    }
+
+    &__text {
+        margin-top: 4.5rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.3rem;
+        color: $font-color-white;
+        line-height: 2.6rem;
+
+        @include rwd(tab-port) {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+}

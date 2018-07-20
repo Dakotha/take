@@ -1,0 +1,36 @@
+.section-5 {
+    background-color: #82ca9c;
+
+    @include gutter;
+
+    @include rwd(tab-port-small) {
+        text-align: center;
+
+        .heading-4 {
+            font-size: 2rem;
+        }
+    }
+
+    &__box {
+        @include rwd(tab-port-small) {
+            margin-bottom: 8rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .heading-2,
+    .heading-4 {
+        color: $font-color-white;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: $font-color-white;
+        line-height: 2.8rem;
+
+        @include rwd(tab-port-small) {
+            font-size: 2rem;
+        }
+    }
+}

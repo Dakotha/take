@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    // @include rwd(tab-land) { font-size: 8px };
+    @include rwd(tab-port) { font-size: 8px };
+    @include rwd(phone) { font-size: 7px };
+    @include rwd(big-desktop) { font-size: 10px };
+}
+
+body {
+    box-sizing: border-box;
+}
+

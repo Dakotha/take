@@ -1,0 +1,103 @@
+.footer {
+    position: relative;
+    padding: 13rem 0;
+    background-color: #192431;
+
+    &__left,
+    &__right {
+        @include rwd(tab-port) {
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+            text-align: center;
+        }
+    }
+
+    &__left {
+        padding-right: 10rem;
+        @include rwd(tab-port) {
+            padding-right: 0;
+        }
+    }
+
+    .heading-4 {
+        color: $font-color-white;
+
+        @include rwd(tab-port) {
+            font-size: 2rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.3rem;
+        color: $font-color-white;
+        line-height: 2.6rem;
+
+        @include rwd(tab-port) {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        font-size: 1.3rem;
+        color: $font-color-white;
+        text-decoration: none;
+        padding-bottom: .5rem;
+    }
+
+    &__input-wrapper {
+        position: relative;
+        height: 6rem;
+        width: 100%;
+
+        @include rwd(tab-port) {
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
+
+    &__input {
+        height: 100%;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        padding: 1rem 2rem;
+        font-size: 3rem;
+    }
+
+    &__input-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #82ca9c;
+        height: 6rem;
+        width: 6rem;
+        border: none;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        cursor: pointer;
+    }
+
+    &__input-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__input-note {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: #57697f;
+        line-height: 2rem;
+    }
+
+    &__copyright {
+        @include absCenterX(90%);
+        font-size: 1.2rem;
+        color: $font-color-white;
+    }
+}
