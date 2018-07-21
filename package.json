@@ -1,16 +1,22 @@
 {
   "name": "take",
   "version": "1.0.0",
-  "description": "PSD to HTML",
+  "description": "Free mobile app landing page. From PSD to HTML",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "sass sass/main.scss css/style.css --watch",
+    "sass:watch": "node-sass sass/main.scss css/style.css -w",
     "liveserver": "live-server",
-    "dev": "npm-run-all --parallel liveserver sass:watch"
+
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "compress:css": "node-sass css/style.css css/style.min.css --output-style compressed",
+
+    "dev": "npm-run-all --parallel liveserver sass:watch",
+    "build": "npm-run-all compile:sass compress:css"
   },
   "keywords": [
-    "PSD",
-    "HTML"
+    "free landing page",
+    "free mobile app landing page",
+    "free website template"
   ],
   "author": "Robert Bednarowicz",
   "license": "ISC",
